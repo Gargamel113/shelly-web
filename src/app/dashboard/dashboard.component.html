@@ -1,0 +1,24 @@
+<!-- <ul>
+  <li *ngFor="let price of prices">
+    <p>PriceArea: {{price?.priceArea}}</p>
+    <p>TimeStamp: {{price?.timeStamp}}</p>
+    <p>TimeStampDay: {{price?.timeStampDay}}</p>
+    <p>TimeStampHour: {{price?.timeStampHour}}</p>
+    <p>Unit: {{price?.unit}}</p>
+    <p>Value: {{price?.value}}</p>
+  </li>
+</ul>
+
+
+<button (click)="getPrice()">Fetch price</button> -->
+<section class="page">
+  <section class="menu-wrapper">
+
+  </section>
+  <section class="wrapper">
+    <relay-card *ngFor="let switch of switches" [id]="switch.id" [isActive]="switch.output" [voltage]="switch.voltage" [current]="switch.current"></relay-card>
+    <div class="relay-card add-new">
+      <p>+</p>
+    </div>
+  </section>
+</section>
