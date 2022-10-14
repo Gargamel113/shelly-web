@@ -1,0 +1,11 @@
+<section class="container">
+  <button (click)="onFetch()" class="btn btn-primary w-50">Fetch All</button>
+
+  <div *ngFor="let price of prices; let i = index" class="card my-3">
+    <p>PriceArea: {{price.PriceArea}}</p>
+    <p>TimeStampDay: {{price.TimeStampDay}}</p>
+    <p>TimeStampHour: {{price.TimeStampHour}}</p>
+    <p>Unit: {{price.Unit}}</p>
+    <p>Value: {{price.Value}}</p>
+  </div>
+</section>

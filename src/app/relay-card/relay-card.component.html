@@ -1,0 +1,12 @@
+<div class="card">
+  <div class="card-body">
+    <!-- <h5 class="card-title">Hello</h5> -->
+    <div class="title">
+      <h5>{{id || 'Hello'}}</h5>
+      <div class="square" [ngClass]="{'on' : isActive, 'off': !isActive}"></div>
+    </div>
+    <p>{{voltage}}V</p>
+    <p>{{current}}A</p>
+    <button (click)="changeRelayState()">{{isActive ? 'Stop' : 'Start'}}</button>
+  </div>
+</div>
